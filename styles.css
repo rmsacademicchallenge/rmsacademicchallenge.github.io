@@ -25,5 +25,5 @@ ul li a:hover {
   background-color: #111111;
 }
 * {
-            color: white !important; /* The !important helps override other styles */
+            color: white; /* The !important helps override other styles */
         }
