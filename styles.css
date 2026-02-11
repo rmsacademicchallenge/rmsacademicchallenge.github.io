@@ -1,53 +1,30 @@
-body {
-  background-color: #0F172A;
-}
-ul {
-  list-style-type: none;
+/* U did not write this -_- comments? lol */
+/* The !important helps override other styles Yh its not that important -_-*/
+        }
+.top-list {
+  background-color: #1F2937;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #1F2937;
+  border: 1px solid #ccc;
 }
-
-ul li {
+.top-list li {
   float: left;
 }
-
-ul li a {
+.top-list li a {
   display: block;
-  color: white;
-  text-align: center;
   padding: 14px 16px;
+  color: white;
   text-decoration: none;
-}
-/* U did not write this -_- comments? lol */
-ul li a:hover {
-  background-color: #111111;
-}
-{
-            color: white; /* The !important helps override other styles Yh its not that important -_-*/
-        }
-
- .top-list {
-    /* Styles for the main <ul> container */
-    list-style-type: none; /* Removes default bullet points from all li within this ul */
-    padding: 0;           /* Removes default left padding */
-    margin: 0;            /* Removes default margins */
-    background-color: #1F2937;
-    border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
 }
 
-.top-list li {
-    /* individual stuff */
-    padding: 10px 15px;      
-    border-bottom: 1px solid #ddd; 
-    font-family: Arial, sans-serif;
-    cursor: pointer;
+body {
+  background-color: #0F172A;
+  margin: 0;
 }
 
-.top-list li:last-child {
-    border-bottom: none;
-}
 
 .top-list li:hover {
     background-color: #ddd;
