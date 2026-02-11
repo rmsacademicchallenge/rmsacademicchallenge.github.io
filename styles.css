@@ -1,12 +1,12 @@
 body {
-  background-color: black;
+  background-color: #0F172A;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #1F2937;
 }
 
 ul li {
@@ -20,7 +20,7 @@ ul li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+<!-- U did not write this -_- comments? lol -->
 ul li a:hover {
   background-color: #111111;
 }
