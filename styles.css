@@ -23,6 +23,7 @@
 body {
   background-color: #0F172A;
         /* Change to #0F172A once test is white or smtg */
+  color: red
   margin: 0;
 }
 
