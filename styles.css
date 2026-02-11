@@ -27,8 +27,28 @@ ul li a:hover {
 * {
             color: white; /* The !important helps override other styles */
         }
-<style>
-  .spaced-list li {
-    margin-bottom: 15px; /* adjust the pixel thingy or some shit. Yh this helps with the lists in scehdule :)
-  }
-</style>
+
+ .top-list {
+    /* Styles for the main <ul> container */
+    list-style-type: none; /* Removes default bullet points from all li within this ul */
+    padding: 0;           /* Removes default left padding */
+    margin: 0;            /* Removes default margins */
+    background-color: #1F2937;
+    border: 1px solid #ccc;
+}
+
+.top-list li {
+    /* individual stuff */
+    padding: 10px 15px;      
+    border-bottom: 1px solid #ddd; 
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.top-list li:last-child {
+    border-bottom: none;
+}
+
+.top-list li:hover {
+    background-color: #ddd;
+}
