@@ -9,10 +9,11 @@
   padding: 0;
   overflow: hidden;
   border: 3px solid red;
+  width: 200px; /* set a fixed width for vertical bar */
 }
 
 .top-list li {
-  float: left;
+  /* float: left; */ /* removed to stack items vertically */
 }
 
 .top-list li a,
