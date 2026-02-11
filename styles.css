@@ -1,38 +1,75 @@
 /* U did not write this -_- comments? lol */
-/* The !important helps override other styles Yh its not that important -_-*/
-/* Removed stray closing brace that broke the CSS */
-
-.top-list {
-  background-color: #ddd;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 3px solid red;
-  width: 200px; /* set a fixed width for blah blah blah blah blah */
-}
-
-.top-list li {
-  /* float: left; thingy is gone *sob */
-}
-
-.top-list li a,
-.top-list li a:visited,
-.top-list li a:active {
-  display: block;
-  padding: 14px 16px;
-  color: #1F2937;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-}
 
 body {
-  background-color: #0F172A;
-        /* Change to #0F172A once test is white or smtg */
-  color: #ccc; /* added missing semicolon */
-  margin: 0;
+background-color:#0F172A;
+color:#ccc;
+margin:0;
+font-family:Arial,sans-serif;
+display:flex;
 }
 
-.top-list li:hover {
-    background-color: #ddd;
+#sidebar {
+background-color:#ddd;
+list-style:none;
+margin:0;
+padding:0;
+border:3px solid red;
+width:200px;
+display:flex;
+flex-direction:column;
+align-items:stretch;
+transition:width 0.3s;
+overflow:hidden;
+height:100vh;
+position:fixed;
 }
+
+#sidebar.collapsed {
+width:60px;
+}
+
+#sidebar li img {
+width:100%;
+height:auto;
+}
+
+#sidebar li a,#sidebar li a:visited,#sidebar li a:active {
+display:flex;
+align-items:center;
+padding:14px 16px;
+color:#1F2937;
+text-decoration:none;
+transition:background 0.3s;
+}
+
+#sidebar li a:hover {
+background-color:#bbb;
+}
+
+#sidebar .icon {
+width:30px;
+height:30px;
+margin-right:10px;
+flex-shrink:0;
+}
+
+#sidebar.collapsed .text {
+display:none;
+}
+
+#toggleBtn {
+cursor:pointer;
+padding:10px;
+border:none;
+background:#ccc;
+font-size:18px;
+}
+
+.icon-home {background-color:#1F2937;clip-path:polygon(50% 0%,100% 38%,100% 100%,0 100%,0% 38%);}
+.icon-tournaments {background-color:#4B5563;clip-path:polygon(0% 0%,100% 0%,100% 75%,75% 75%,75% 100%,50% 75%,0% 75%);}
+.icon-about {background-color:#FBBF24;clip-path:polygon(0% 0%,0% 100%,100% 100%,100% 27%,73% 0%);}
+.icon-activities {background-color:#EF4444;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+
+.content {margin-left:200px;padding:20px;transition:margin-left 0.3s;}
+#sidebar.collapsed ~ .content {margin-left:60px;}
+.top-list li a.active {background-color:#aaa;}
