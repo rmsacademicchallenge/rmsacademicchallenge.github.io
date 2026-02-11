@@ -1,6 +1,7 @@
 /* U did not write this -_- comments? lol */
 /* The !important helps override other styles Yh its not that important -_-*/
-        }
+/* Removed stray closing brace that broke the CSS */
+
 .top-list {
   background-color: #1F2937;
   list-style: none;
@@ -9,10 +10,14 @@
   overflow: hidden;
   border: 1px solid #ccc;
 }
+
 .top-list li {
   float: left;
 }
-.top-list li a {
+
+.top-list li a,
+.top-list li a:visited,
+.top-list li a:active {
   display: block;
   padding: 14px 16px;
   color: white;
@@ -23,10 +28,9 @@
 body {
   background-color: #0F172A;
         /* Change to #0F172A once test is white or smtg */
-  color: red
+  color: red; /* added missing semicolon */
   margin: 0;
 }
-
 
 .top-list li:hover {
     background-color: #ddd;
