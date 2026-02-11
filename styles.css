@@ -21,7 +21,8 @@
 }
 
 body {
-  background-color: #0F172A;
+  background-color: #ccc;
+        /* Change to #0F172A once test is white or smtg */
   margin: 0;
 }
 
