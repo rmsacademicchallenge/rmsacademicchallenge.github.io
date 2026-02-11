@@ -24,8 +24,8 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
-* {
-            color: white; /* The !important helps override other styles */
+{
+            color: white; /* The !important helps override other styles Yh its not that important -_-*/
         }
 
  .top-list {
